@@ -1055,7 +1055,7 @@
                 {
                   "id": "9b2fd7e2-ba8d-445a-aaa8-15f124b8589a",
                   "title": "Acceso no  autorizado ",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Un atacante podría enviar una \nconsulta a la BD.",
@@ -1082,7 +1082,7 @@
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
             }
@@ -1287,6 +1287,102 @@
             "shape": "flow",
             "attrs": {
               "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Páginas",
+              "description": "Páginas web leídas desde el disco",
+              "outOfScope": true,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "550cb0c3-be62-4643-8e08-7951c8cfaacf",
+            "labels": [
+              "Páginas"
+            ],
+            "source": {
+              "cell": "5972f16e-24d2-4818-9f89-6c988dfc1852"
+            },
+            "target": {
+              "cell": "10708306-b6f9-46ee-b707-5d3d9c0152c0"
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": 530
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Lee web\napp config",
+              "description": "Archivo físico de configuración \nleído desde el disco",
+              "outOfScope": true,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "cde444ab-3a6e-470f-b81c-3810aaf2bcc3",
+            "labels": [
+              "Lee web\napp config"
+            ],
+            "source": {
+              "cell": "11400147-c5e1-4d87-ae14-9c52799b2fa8"
+            },
+            "target": {
+              "cell": "10708306-b6f9-46ee-b707-5d3d9c0152c0"
+            },
+            "vertices": [
+              {
+                "x": 650,
+                "y": 600
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
                 "stroke": "red",
                 "strokeWidth": 2.5,
                 "targetMarker": {
@@ -1342,7 +1438,8 @@
               "cell": "5ad6ff53-9dc0-4265-b89a-e7ded9ec8381"
             },
             "target": {
-              "cell": "10708306-b6f9-46ee-b707-5d3d9c0152c0"
+              "x": 620,
+              "y": 360
             },
             "vertices": [
               {
@@ -1547,7 +1644,8 @@
               "cell": "10708306-b6f9-46ee-b707-5d3d9c0152c0"
             },
             "target": {
-              "cell": "39f8d39a-9bf6-4711-8bb5-a3d6538b2590"
+              "x": 760,
+              "y": 200
             },
             "vertices": [
               {
@@ -1557,54 +1655,6 @@
               {
                 "x": 700,
                 "y": 260
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": "4 3"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Páginas",
-              "description": "Páginas web leídas desde el disco",
-              "outOfScope": true,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "550cb0c3-be62-4643-8e08-7951c8cfaacf",
-            "labels": [
-              "Páginas"
-            ],
-            "source": {
-              "cell": "5972f16e-24d2-4818-9f89-6c988dfc1852"
-            },
-            "target": {
-              "cell": "10708306-b6f9-46ee-b707-5d3d9c0152c0"
-            },
-            "vertices": [
-              {
-                "x": 450,
-                "y": 530
               }
             ]
           },
@@ -1739,54 +1789,6 @@
               {
                 "x": 760,
                 "y": 510
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": "4 3"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Lee web\napp config",
-              "description": "Archivo físico de configuración \nleído desde el disco",
-              "outOfScope": true,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "cde444ab-3a6e-470f-b81c-3810aaf2bcc3",
-            "labels": [
-              "Lee web\napp config"
-            ],
-            "source": {
-              "cell": "11400147-c5e1-4d87-ae14-9c52799b2fa8"
-            },
-            "target": {
-              "cell": "10708306-b6f9-46ee-b707-5d3d9c0152c0"
-            },
-            "vertices": [
-              {
-                "x": 650,
-                "y": 600
               }
             ]
           }
