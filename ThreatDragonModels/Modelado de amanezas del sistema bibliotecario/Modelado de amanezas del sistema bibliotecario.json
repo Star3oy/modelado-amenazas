@@ -850,7 +850,7 @@
         "cells": [
           {
             "position": {
-              "x": 320,
+              "x": 360,
               "y": 100
             },
             "size": {
@@ -869,8 +869,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "5ad6ff53-9dc0-4265-b89a-e7ded9ec8381",
             "zIndex": 1,
+            "id": "5ad6ff53-9dc0-4265-b89a-e7ded9ec8381",
             "data": {
               "type": "tm.Actor",
               "name": "Usuarios",
@@ -902,7 +902,7 @@
           },
           {
             "position": {
-              "x": 693,
+              "x": 733,
               "y": 100
             },
             "size": {
@@ -921,8 +921,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "39f8d39a-9bf6-4711-8bb5-a3d6538b2590",
             "zIndex": 2,
+            "id": "39f8d39a-9bf6-4711-8bb5-a3d6538b2590",
             "data": {
               "type": "tm.Actor",
               "name": "Bibliotecario",
@@ -954,7 +954,7 @@
           },
           {
             "position": {
-              "x": 530,
+              "x": 570,
               "y": 360
             },
             "size": {
@@ -973,8 +973,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "10708306-b6f9-46ee-b707-5d3d9c0152c0",
             "zIndex": 3,
+            "id": "10708306-b6f9-46ee-b707-5d3d9c0152c0",
             "data": {
               "type": "tm.Process",
               "name": "Sitio web \nbiblioteca",
@@ -1013,7 +1013,7 @@
           },
           {
             "position": {
-              "x": 900,
+              "x": 940,
               "y": 510
             },
             "size": {
@@ -1037,8 +1037,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "c9467cd5-3cee-4445-a048-6284b212524c",
             "zIndex": 4,
+            "id": "c9467cd5-3cee-4445-a048-6284b212524c",
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
@@ -1089,8 +1089,8 @@
           },
           {
             "position": {
-              "x": 550,
-              "y": 640
+              "x": 560,
+              "y": 620
             },
             "size": {
               "width": 120,
@@ -1113,8 +1113,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "11400147-c5e1-4d87-ae14-9c52799b2fa8",
             "zIndex": 5,
+            "id": "11400147-c5e1-4d87-ae14-9c52799b2fa8",
             "data": {
               "type": "tm.Store",
               "name": "Web Application config",
@@ -1152,7 +1152,7 @@
           },
           {
             "position": {
-              "x": 350,
+              "x": 390,
               "y": 580
             },
             "size": {
@@ -1174,8 +1174,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "5972f16e-24d2-4818-9f89-6c988dfc1852",
             "zIndex": 6,
+            "id": "5972f16e-24d2-4818-9f89-6c988dfc1852",
             "data": {
               "type": "tm.Store",
               "name": "Páginas web\nen disco",
@@ -1225,30 +1225,30 @@
               "hasOpenThreats": false
             },
             "id": "baf9f015-e212-4d7c-84cf-75fe49fa684e",
+            "labels": [
+              "usuario/web server límite"
+            ],
             "source": {
-              "x": 230,
+              "x": 270,
               "y": 130
             },
             "target": {
-              "x": 1050,
+              "x": 1090,
               "y": 130
             },
             "vertices": [
               {
-                "x": 270,
+                "x": 310,
                 "y": 230
               },
               {
-                "x": 590,
+                "x": 630,
                 "y": 230
               },
               {
-                "x": 940,
+                "x": 980,
                 "y": 220
               }
-            ],
-            "labels": [
-              "usuario/web server límite"
             ]
           },
           {
@@ -1265,6 +1265,9 @@
               "hasOpenThreats": false
             },
             "id": "19a7c9b4-fe46-468c-bb3a-2f770a32cf82",
+            "labels": [
+              "Límite web server/Db"
+            ],
             "source": {
               "x": 980,
               "y": 350
@@ -1278,9 +1281,6 @@
                 "x": 810,
                 "y": 490
               }
-            ],
-            "labels": [
-              "Límite web server/Db"
             ]
           },
           {
@@ -1335,6 +1335,9 @@
               }
             },
             "id": "8f16b6b8-e7e3-479a-96af-4e0607bfc2f4",
+            "labels": [
+              "Web Request"
+            ],
             "source": {
               "cell": "5ad6ff53-9dc0-4265-b89a-e7ded9ec8381"
             },
@@ -1343,12 +1346,9 @@
             },
             "vertices": [
               {
-                "x": 560,
+                "x": 600,
                 "y": 320
               }
-            ],
-            "labels": [
-              "Web Request"
             ]
           },
           {
@@ -1403,6 +1403,9 @@
               }
             },
             "id": "63f81787-21f9-4c4c-9a79-d846c4ff0292",
+            "labels": [
+              "Web Response"
+            ],
             "source": {
               "cell": "10708306-b6f9-46ee-b707-5d3d9c0152c0"
             },
@@ -1411,12 +1414,9 @@
             },
             "vertices": [
               {
-                "x": 400,
+                "x": 440,
                 "y": 360
               }
-            ],
-            "labels": [
-              "Web Response"
             ]
           },
           {
@@ -1471,8 +1471,11 @@
               }
             },
             "id": "f6baf1f6-328e-44b2-afba-9764ff20f06e",
+            "labels": [
+              "Web Request"
+            ],
             "source": {
-              "x": 790,
+              "x": 830,
               "y": 210
             },
             "target": {
@@ -1480,12 +1483,9 @@
             },
             "vertices": [
               {
-                "x": 710,
+                "x": 750,
                 "y": 340
               }
-            ],
-            "labels": [
-              "Web Request"
             ]
           },
           {
@@ -1540,6 +1540,9 @@
               }
             },
             "id": "25cc60ac-74ec-4c22-9d8c-b2aeed644221",
+            "labels": [
+              "Web Response"
+            ],
             "source": {
               "cell": "10708306-b6f9-46ee-b707-5d3d9c0152c0"
             },
@@ -1548,16 +1551,13 @@
             },
             "vertices": [
               {
-                "x": 630,
+                "x": 670,
                 "y": 340
               },
               {
-                "x": 660,
+                "x": 700,
                 "y": 260
               }
-            ],
-            "labels": [
-              "Web Response"
             ]
           },
           {
@@ -1592,6 +1592,9 @@
               "threats": []
             },
             "id": "550cb0c3-be62-4643-8e08-7951c8cfaacf",
+            "labels": [
+              "Páginas"
+            ],
             "source": {
               "cell": "5972f16e-24d2-4818-9f89-6c988dfc1852"
             },
@@ -1600,12 +1603,9 @@
             },
             "vertices": [
               {
-                "x": 410,
+                "x": 450,
                 "y": 530
               }
-            ],
-            "labels": [
-              "Páginas"
             ]
           },
           {
@@ -1640,14 +1640,20 @@
               "threats": []
             },
             "id": "cde444ab-3a6e-470f-b81c-3810aaf2bcc3",
+            "labels": [
+              "Lee web\napp config"
+            ],
             "source": {
               "cell": "11400147-c5e1-4d87-ae14-9c52799b2fa8"
             },
             "target": {
               "cell": "10708306-b6f9-46ee-b707-5d3d9c0152c0"
             },
-            "labels": [
-              "Lee web\napp config"
+            "vertices": [
+              {
+                "x": 650,
+                "y": 600
+              }
             ]
           },
           {
@@ -1701,6 +1707,9 @@
               }
             },
             "id": "48cefa60-4989-4394-90a1-7022de970cc8",
+            "labels": [
+              "Resultados Web App Query"
+            ],
             "source": {
               "cell": "c9467cd5-3cee-4445-a048-6284b212524c"
             },
@@ -1709,12 +1718,9 @@
             },
             "vertices": [
               {
-                "x": 910,
+                "x": 950,
                 "y": 426
               }
-            ],
-            "labels": [
-              "Resultados Web App Query"
             ]
           },
           {
@@ -1768,6 +1774,9 @@
               }
             },
             "id": "8c1ba13c-d5c4-4aa8-818e-eeaafe85f0d6",
+            "labels": [
+              "Queries"
+            ],
             "source": {
               "cell": "10708306-b6f9-46ee-b707-5d3d9c0152c0"
             },
@@ -1776,12 +1785,9 @@
             },
             "vertices": [
               {
-                "x": 720,
+                "x": 760,
                 "y": 510
               }
-            ],
-            "labels": [
-              "Queries"
             ]
           }
         ]
