@@ -1089,8 +1089,8 @@
           },
           {
             "position": {
-              "x": 560,
-              "y": 620
+              "x": 500,
+              "y": 560
             },
             "size": {
               "width": 120,
@@ -1152,8 +1152,8 @@
           },
           {
             "position": {
-              "x": 390,
-              "y": 580
+              "x": 320,
+              "y": 520
             },
             "size": {
               "width": 120,
@@ -1619,54 +1619,6 @@
                 "sourceMarker": {
                   "name": ""
                 },
-                "strokeDasharray": "4 3"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Lee web\napp config",
-              "description": "Archivo físico de configuración \nleído desde el disco",
-              "outOfScope": true,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "cde444ab-3a6e-470f-b81c-3810aaf2bcc3",
-            "labels": [
-              "Lee web\napp config"
-            ],
-            "source": {
-              "cell": "11400147-c5e1-4d87-ae14-9c52799b2fa8"
-            },
-            "target": {
-              "cell": "10708306-b6f9-46ee-b707-5d3d9c0152c0"
-            },
-            "vertices": [
-              {
-                "x": 650,
-                "y": 600
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
                 "strokeDasharray": null
               }
             },
@@ -1787,6 +1739,54 @@
               {
                 "x": 760,
                 "y": 510
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Lee web\napp config",
+              "description": "Archivo físico de configuración \nleído desde el disco",
+              "outOfScope": true,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "cde444ab-3a6e-470f-b81c-3810aaf2bcc3",
+            "labels": [
+              "Lee web\napp config"
+            ],
+            "source": {
+              "cell": "11400147-c5e1-4d87-ae14-9c52799b2fa8"
+            },
+            "target": {
+              "cell": "10708306-b6f9-46ee-b707-5d3d9c0152c0"
+            },
+            "vertices": [
+              {
+                "x": 650,
+                "y": 600
               }
             ]
           }
